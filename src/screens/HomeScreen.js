@@ -82,11 +82,14 @@ export default function HomeScreen() {
     lastThirtyDays: "Last Thirty Days",
     thisMonth: "This Month",
     lastMonth: "Last Month",
+    thisYear: "This Year",
+    lastYear: "Last Year",
+    lifeTime: "Life Time",
   };
 
   return (
     <View style={styles.container}>
-      <StatusBar barStyle="light-content" backgroundColor="#191919" />
+      {/* <StatusBar barStyle="light-content" backgroundColor="#191919" /> */}
       <View style={styles.header}>
         <View style={styles.headerTitle}>
           <Text style={styles.headerTitleText}>Statistics</Text>
@@ -401,7 +404,7 @@ const styles = StyleSheet.create({
     backgroundColor: "#191919",
     borderBottomLeftRadius: 20,
     borderBottomRightRadius: 20,
-    // paddingTop: StatusBar.currentHeight,
+    paddingTop: StatusBar.currentHeight,
   },
   headerTitle: {
     padding: 20,
